@@ -4,10 +4,11 @@ import MobileMenu from './MobileMenu'
 import ThemeToggle from './ThemeToggle'
 import { useState, useEffect } from 'react'
 import blogs from '@/src/data/blogs.json'
+import { Blog } from '../types/blog'
 
 export default function Navbar() {
     const [query, setQuery] = useState('')
-    const [results, setResults] = useState<any[]>([])
+    const [results, setResults] = useState<Blog[]>([])
     const [showResults, setShowResults] = useState(false)
 
     // Debounce timer
@@ -19,7 +20,7 @@ export default function Navbar() {
         }
 
         const timer = setTimeout(() => {
-            const filtered = (blogs as any[]).filter((b) =>
+            const filtered = (blogs as Blog[]).filter((b) =>
                 b.title.toLowerCase().includes(query.trim().toLowerCase())
             )
             setResults(filtered)

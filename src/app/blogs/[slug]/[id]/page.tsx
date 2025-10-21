@@ -45,6 +45,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 
 import Script from 'next/script'
+import Image from 'next/image'
 
 export default function BlogPage({ params }: { params: { id: string } }) {
   const blog = blogs.find((b) => b.id === params.id)
@@ -82,7 +83,14 @@ export default function BlogPage({ params }: { params: { id: string } }) {
       {/* ✅ Blog Content */}
       <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
       <p className="text-gray-500 mb-6">Published on {blog.date}</p>
-      <img src={blog.image} alt={blog.title} className="rounded-xl mb-8" />
+      <div className="relative w-full h-96 mb-8">
+        <Image
+          src={blog.image}
+          alt={blog.title}
+          fill
+          className="object-cover rounded-xl"
+        />
+      </div>
       <div dangerouslySetInnerHTML={{ __html: blog.content }} />
     </article>
   )

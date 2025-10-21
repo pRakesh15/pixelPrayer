@@ -1,6 +1,7 @@
 import { ImageResponse } from 'next/og'
 import blogs from '../../../data/blogs.json'
 import { Blog } from '@/src/types/blog'
+import Image from 'next/image'
 
 export const runtime = 'edge'
 
@@ -31,7 +32,7 @@ export async function GET(req: Request) {
                 }}
             >
                 {cover && (
-                    <img
+                    <Image
                         src={cover}
                         alt=""
                         width="1200"
