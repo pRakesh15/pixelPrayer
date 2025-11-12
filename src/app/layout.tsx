@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Analytics from '../components/Analytics'
+import ClientOnly from '../components/ClientOnly'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.bloghives.in'),
@@ -103,8 +104,10 @@ export default function RootLayout({
       </head>
       <body className="bg-white text-black min-h-screen flex flex-col antialiased">
         <Navbar />
+         <ClientOnly>
         {/* Analytics client component tracks route changes and fires page_view */}
         {GA_MEASUREMENT_ID && <Analytics />}
+        </ClientOnly>
         <main className="flex-1 container mx-auto px-4 py-8 max-w-5xl">
           {children}
         </main>

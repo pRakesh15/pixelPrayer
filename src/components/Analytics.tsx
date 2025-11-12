@@ -5,8 +5,8 @@ import { usePathname, useSearchParams } from 'next/navigation'
 
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void
-    dataLayer?: any[]
+    gtag?: (...args: unknown[]) => void
+    dataLayer?: Array<Record<string, unknown>>
   }
 }
 
@@ -26,14 +26,13 @@ export default function Analytics() {
         page_title: document.title,
       })
     } else {
-      // fallback push into dataLayer (gtag will read this when loaded)
       window.dataLayer = window.dataLayer || []
       window.dataLayer.push({
         event: 'page_view',
         page_location: window.location.href,
         page_path: path,
         page_title: document.title,
-      })
+      } as Record<string, unknown>)
     }
   }, [pathname, searchParams, measurementId])
 
