@@ -4,7 +4,7 @@ export const GET = () => {
   const urls = [
     { loc: 'https://www.bloghives.in/', lastmod: new Date().toISOString().split('T')[0], priority: '1.0' },
     ...blogs.map(b => ({
-      loc: `https://www.bloghives.in/blogs/${b.slug}`,
+      loc: `https://www.bloghives.in/blogs/${b.slug}/${b.id}`,
       lastmod: b.updateTime || b.date, 
       priority: '0.9',
     })),

@@ -27,10 +27,10 @@ export default function Home() {
           <BlogCard key={blog.id} blog={blog} />
         ))}
       </div>
-      <div className="mt-8 border border-dashed border-gray-300 text-center py-10 text-gray-400">
+      {/* <div className="mt-8 border border-dashed border-gray-300 text-center py-10 text-gray-400"> */}
         {/* AdSense responsive placeholder */}
-        <div className="max-w-full">AdSense Banner Placeholder</div>
-      </div>
+        {/* <div className="max-w-full">AdSense Banner Placeholder</div> */}
+      {/* </div> */}
 
       {/* Pagination */}
       {totalPages > 1 && (

@@ -104,9 +104,9 @@ export default function AboutPage() {
         serenity, and pixels meet purpose.
       </p>
 
-      <div className="mt-10 border border-dashed border-gray-300 text-center py-10 text-gray-400 rounded-lg">
+      {/* <div className="mt-10 border border-dashed border-gray-300 text-center py-10 text-gray-400 rounded-lg">
         AdSense Banner Placeholder
-      </div>
+      </div> */}
     </section>
   );
 }
