@@ -2,9 +2,9 @@ import blogs from '../../data/blogs.json'
 
 export const GET = () => {
   const urls = [
-    { loc: 'https://yourdomain.com/', lastmod: new Date().toISOString().split('T')[0], priority: '1.0' },
+    { loc: 'https://www.bloghives.in/', lastmod: new Date().toISOString().split('T')[0], priority: '1.0' },
     ...blogs.map(b => ({
-      loc: `https://yourdomain.com/blogs/${b.slug}`,
+      loc: `https://www.bloghives.in/blogs/${b.slug}`,
       lastmod: b.updateTime || b.date, 
       priority: '0.9',
     })),

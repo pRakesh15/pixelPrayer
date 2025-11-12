@@ -22,7 +22,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     }
   }
 
-  const url = `https://yourdomain.com/blogs/${blog.slug}`
+  const url = `https://www.bloghives.in/blogs/${blog.slug}`
+
 
   return {
     title: `${blog.title} | bloghives`,
@@ -64,8 +65,8 @@ export default function BlogPage({ params }: { params: { slug: string } }) {
     author: { '@type': 'Person', name: blog.author },
     datePublished: blog.date,
     dateModified: blog.updateTime,
-    url: `https://yourdomain.com/blogs/${blog.slug}`,
-    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://yourdomain.com/blogs/${blog.slug}` },
+    url: `https://www.bloghives.in/blogs/${blog.slug}`,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.bloghives.in/blogs/${blog.slug}` },
   }
 
   const relatedBlogs = blogs

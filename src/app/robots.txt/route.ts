@@ -3,7 +3,7 @@ export const GET = () => {
 User-agent: *
 Allow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://www.bloghives.in/sitemap.xml
 `.trim();
 
     return new Response(text, {

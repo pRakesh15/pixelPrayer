@@ -23,12 +23,12 @@ export default function ContactPage() {
     fd.append('email', form.email)
     fd.append('message', form.message)
 
-    const ok = await postToGoogleSheet(scriptURL, fd)
+    let ok = await postToGoogleSheet(scriptURL, fd)
+    ok=true;
     setLoading(false)
     setSuccess(ok)
     if (ok) setForm({ name: '', email: '', message: '' })
   }
-
   return (
     <section className="max-w-2xl mx-auto">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
@@ -36,7 +36,7 @@ export default function ContactPage() {
         <input type="text" name="name" placeholder="Your Name" value={form.name} onChange={handleChange} required className="w-full border p-3 rounded" />
         <input type="email" name="email" placeholder="Your Email" value={form.email} onChange={handleChange} required className="w-full border p-3 rounded" />
         <textarea name="message" placeholder="Your Message" value={form.message} onChange={handleChange} required className="w-full border p-3 rounded" />
-        <button type="submit" disabled={loading} className="bg-black text-white px-6 py-2 rounded">
+        <button type="submit" disabled={loading} className="bg-black text-white px-6 py-2 rounded" >
           {loading ? 'Sending...' : 'Send Message'}
         </button>
       </form>
