@@ -24,7 +24,7 @@ export default function SiteFooter() {
                 href="/"
                 className="text-lg font-semibold hover:underline underline-offset-4"
               >
-                PixelPrayer
+                Bloghives
               </Link>
               <span className="text-sm text-gray-500 dark:text-gray-400">
                 Thoughts, stories, and ideas
@@ -88,7 +88,7 @@ export default function SiteFooter() {
 
         {/* Bottom: Copyright */}
         <div className="mt-6 border-t border-gray-200 dark:border-gray-700 pt-6 text-center text-sm text-gray-500 dark:text-gray-400">
-          <p>© {year} PixelPrayer. All rights reserved.</p>
+          <p>© {year} Bloghives. All rights reserved.</p>
         </div>
       </div>
     </footer>

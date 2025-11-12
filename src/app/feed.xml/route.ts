@@ -20,9 +20,9 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
     <channel>
-      <title>PixelPrayer RSS Feed</title>
+      <title>bloghives RSS Feed</title>
       <link>${domain}</link>
-      <description>Latest posts from PixelPrayer</description>
+      <description>Latest posts from bloghives</description>
       ${items}
     </channel>
   </rss>`

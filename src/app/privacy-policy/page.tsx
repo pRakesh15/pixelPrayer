@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Privacy Policy | PixelPrayer',
+  title: 'Privacy Policy | bloghives',
   description:
-    'Read the Privacy Policy of PixelPrayer to understand how we handle user data, cookies, and advertising in compliance with Google AdSense.',
+    'Read the Privacy Policy of bloghives to understand how we handle user data, cookies, and advertising in compliance with Google AdSense.',
 }
 
 export default function PrivacyPolicy() {
@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
       <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
 
       <p className="text-gray-700 leading-relaxed mb-4">
-        Welcome to <strong>PixelPrayer</strong>. This Privacy Policy explains how we collect, use, and protect your
+        Welcome to <strong>bloghives</strong>. This Privacy Policy explains how we collect, use, and protect your
         personal information when you visit and use our website. By accessing or using our site, you agree to
         the terms outlined in this policy.
       </p>
@@ -73,8 +73,8 @@ export default function PrivacyPolicy() {
       <h2 className="text-xl font-semibold mt-6 mb-2">8. Contact Us</h2>
       <p className="text-gray-700 leading-relaxed mb-4">
         If you have any questions or concerns about this Privacy Policy, please contact us at{' '}
-        <a href="mailto:contact@PixelPrayer.com" className="text-blue-600 underline">
-          contact@PixelPrayer.com
+        <a href="mailto:contact@bloghives.com" className="text-blue-600 underline">
+          contact@bloghives.com
         </a>
         .
       </p>

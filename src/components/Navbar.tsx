@@ -35,7 +35,7 @@ export default function Navbar() {
             <div className="container mx-auto flex items-center justify-between px-4 py-4 gap-4">
                 {/* Left: Logo */}
                 <Link href="/" className="text-2xl font-semibold hover:underline underline-offset-4">
-                    PixelPrayer
+                    Bloghives
                 </Link>
 
                 {/* Search bar (desktop only) */}

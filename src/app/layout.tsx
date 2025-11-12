@@ -6,11 +6,11 @@ import Footer from '../components/Footer'
 export const metadata: Metadata = {
   metadataBase: new URL('https://yourdomain.com'), // ✅ Replace from .env when deploying
   title: {
-    default: 'PixelPrayer – Read, Learn, Explore',
-    template: '%s | PixelPrayer',
+    default: 'bloghives – Read, Learn, Explore',
+    template: '%s | bloghives',
   },
   description:
-    'PixelPrayer is a minimal blog sharing thoughts on tech, travel, devotion, gaming, and more — all in a clean black & white theme.',
+    'bloghives is a minimal blog sharing thoughts on tech, travel, devotion, gaming, and more — all in a clean black & white theme.',
   keywords: [
     'blog',
     'travel',
@@ -22,19 +22,19 @@ export const metadata: Metadata = {
     'reading',
     'minimal blog',
   ],
-  authors: [{ name: 'PixelPrayer Team' }],
+  authors: [{ name: 'bloghives Team' }],
   openGraph: {
-    title: 'PixelPrayer – Read, Learn, Explore',
+    title: 'bloghives – Read, Learn, Explore',
     description:
-      'Explore inspiring stories and blogs on tech, travel, and lifestyle with PixelPrayer.',
+      'Explore inspiring stories and blogs on tech, travel, and lifestyle with bloghives.',
     url: 'https://yourdomain.com',
-    siteName: 'PixelPrayer',
+    siteName: 'bloghives',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'PixelPrayer Blog OG Image',
+        alt: 'bloghives Blog OG Image',
       },
     ],
     locale: 'en_US',
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PixelPrayer – Read, Learn, Explore',
+    title: 'bloghives – Read, Learn, Explore',
     description:
-      'Discover minimal, inspiring blogs about tech, travel, and more on PixelPrayer.',
+      'Discover minimal, inspiring blogs about tech, travel, and more on bloghives.',
     images: ['/og-image.jpg'],
   },
   robots: {

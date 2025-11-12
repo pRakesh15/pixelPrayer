@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Terms of Service | PixelPrayer',
+  title: 'Terms of Service | bloghives',
   description:
-    'Read the Terms and Conditions for using PixelPrayer. Learn about content usage, copyright, limitations, and community guidelines.',
+    'Read the Terms and Conditions for using bloghives. Learn about content usage, copyright, limitations, and community guidelines.',
 }
 
 export default function TermsPage() {
@@ -10,7 +10,7 @@ export default function TermsPage() {
       <h1 className="text-3xl font-bold mb-6">Terms of Service</h1>
 
       <p className="text-gray-700 leading-relaxed mb-4">
-        Welcome to <strong>PixelPrayer</strong>. By accessing or using this website, you agree to comply with and be
+        Welcome to <strong>bloghives</strong>. By accessing or using this website, you agree to comply with and be
         bound by these Terms and Conditions. Please read them carefully before using the site.
       </p>
 
@@ -24,7 +24,7 @@ export default function TermsPage() {
       <h2 className="text-xl font-semibold mt-6 mb-2">2. Intellectual Property</h2>
       <p className="text-gray-700 leading-relaxed mb-4">
         All content published on this website — including articles, images, and media — is the property of{' '}
-        <strong>PixelPrayer</strong> or its respective authors. You may share links to our content but cannot copy,
+        <strong>bloghives</strong> or its respective authors. You may share links to our content but cannot copy,
         reproduce, or redistribute any part of it without written permission.
       </p>
 
@@ -57,8 +57,8 @@ export default function TermsPage() {
       <h2 className="text-xl font-semibold mt-6 mb-2">7. Contact Us</h2>
       <p className="text-gray-700 leading-relaxed mb-4">
         For any questions regarding these Terms, please reach out to us at{' '}
-        <a href="mailto:contact@PixelPrayer.com" className="text-blue-600 underline">
-          contact@pixelprayer.com
+        <a href="mailto:contact@bloghives.com" className="text-blue-600 underline">
+          contact@bloghives.com
         </a>
         .
       </p>

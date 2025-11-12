@@ -10,7 +10,7 @@ export async function GET(req: Request) {
     const id = searchParams.get('id')
     const blog = (blogs as Blog[]).find((b) => b.id === id)
     const domain = process.env.NEXT_PUBLIC_DOMAIN || 'http://localhost:3000';
-    const title = blog?.title || 'PixelPrayer'
+    const title = blog?.title || 'bloghives'
     // const cover = blog?.image || null
     const cover = blog?.image ? `${domain}${blog.image}` : 'https://via.placeholder.com/1200x630?text=My+Blog';
 
