@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://yourdomain.com'), // ✅ Replace from .env when deploying
+  metadataBase: new URL('https://www.bloghives.in'), // ✅ Replace from .env when deploying
   title: {
     default: 'bloghives – Read, Learn, Explore',
     template: '%s | bloghives',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'bloghives – Read, Learn, Explore',
     description:
       'Explore inspiring stories and blogs on tech, travel, and lifestyle with bloghives.',
-    url: 'https://yourdomain.com',
+    url: 'https://www.bloghives.in',
     siteName: 'bloghives',
     images: [
       {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://yourdomain.com',
+    canonical: 'https://www.bloghives.in',
   },
 }
 

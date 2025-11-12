@@ -61,7 +61,7 @@ export default function BlogPage({ params }: { params: { slug: string } }) {
     '@type': 'BlogPosting',
     headline: blog.title,
     description: blog.excerpt,
-    image: `https://yourdomain.com${blog.image}`,
+    image: `https://www.bloghives.in${blog.image}`,
     author: { '@type': 'Person', name: blog.author },
     datePublished: blog.date,
     dateModified: blog.updateTime,

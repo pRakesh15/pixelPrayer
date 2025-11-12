@@ -2,7 +2,7 @@ import blogs from '../../data/blogs.json'
 import { Blog } from '@/src/types/blog'
 
 export async function GET() {
-  const domain = process.env.NEXT_PUBLIC_DOMAIN || 'https://yourdomain.com'
+  const domain = process.env.NEXT_PUBLIC_DOMAIN || 'https://www.bloghives.in'
   const posts = blogs as Blog[]
 
   const items = posts
