@@ -7,7 +7,7 @@ import blogs from '../data/blogs.json';
 
 export default function Home() {
   const allBlogs = blogs as Blog[];
-  const itemsPerPage = 4;
+  const itemsPerPage = 8;
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(allBlogs.length / itemsPerPage);
