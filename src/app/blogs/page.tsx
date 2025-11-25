@@ -5,7 +5,7 @@ import { Blog } from '@/src/types/blog'
 import BlogCard from '@/src/components/BlogCard'
 
 
-const ITEMS_PER_PAGE = 4
+const ITEMS_PER_PAGE = 8
 
 export default function BlogsPage() {
   const blogs = blogsData as Blog[]
