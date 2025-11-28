@@ -57,11 +57,12 @@ export const metadata: Metadata = {
     canonical: 'https://www.bloghives.in',
   },
   icons: {
-    icon: '/favicon.ico',                 
-    shortcut: '/favicon.ico',            
-    apple: '/apple-touch-icon.png',      
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
     other: [
-      { rel: 'icon', url: '/favicon.svg', type: 'image/svg+xml' }
+      { rel: 'icon', url: '/favicon.svg', type: 'image/svg+xml' },
+
     ]
   }
 }
@@ -79,9 +80,10 @@ export default function RootLayout({
         {/* ✅ Google AdSense (production only) */}
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR-ADSENSE-CLIENT-ID"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1975694576406901"
           crossOrigin="anonymous"
         />
+        <meta name="google-adsense-account" content="ca-pub-1975694576406901" />
 
         {/* Google Analytics 4 - add only if NEXT_PUBLIC_GA_MEASUREMENT_ID is set */}
         {GA_MEASUREMENT_ID && (
@@ -104,9 +106,9 @@ export default function RootLayout({
       </head>
       <body className="bg-white text-black min-h-screen flex flex-col antialiased">
         <Navbar />
-         <ClientOnly>
-        {/* Analytics client component tracks route changes and fires page_view */}
-        {GA_MEASUREMENT_ID && <Analytics />}
+        <ClientOnly>
+          {/* Analytics client component tracks route changes and fires page_view */}
+          {GA_MEASUREMENT_ID && <Analytics />}
         </ClientOnly>
         <main className="flex-1 container mx-auto px-4 py-8 max-w-5xl">
           {children}
